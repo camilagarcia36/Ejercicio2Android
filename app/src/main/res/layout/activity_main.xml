@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8DE68A4D"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:progress="0"/>
+
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/lupa"/>
+
+    <EditText
+        android:id="@+id/ET1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="https://www.google.com/"
+        android:inputType="textUri"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/ET2"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="https://www.rtve.es/"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/bMA"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:onClick="openWA"
+        android:text="Search"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>
